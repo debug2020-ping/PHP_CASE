@@ -1,0 +1,7 @@
+
+修改PHP的配置文件：
+
+error_reporting = E_ALL
+log_error = On
+error_log = C:\web\php_errors.log
+

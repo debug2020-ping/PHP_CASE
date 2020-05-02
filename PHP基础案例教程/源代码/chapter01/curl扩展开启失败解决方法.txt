@@ -1,0 +1,8 @@
+
+在某些系统环境下，直接在php.ini中开启curl扩展无效：
+
+extension=php_curl.dll
+
+还需要在 Apache 的 httpd.conf 中添加如下配置：
+
+LoadFile "C:/web/php7.1/libssh2.dll"

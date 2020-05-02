@@ -1,0 +1,26 @@
+【配置MySQL】
+1、将默认配置文件“my-default.ini”复制一份，命名为“my.ini”。
+2、打开my.ini，找到如下配置项进行修改：
+basedir = C:\web\mysql5.7
+datadir = C:\web\mysql5.7\data
+port = 3306
+
+
+【安装MySQL】
+①执行【开始】菜单-【所有程序】-【附件】，找到【命令提示符】并单击鼠标右键，在弹出的快捷菜单中选择【以管理员身份运行】方式，启动命令行窗口。
+②	在命令模式下，切换到MySQL安装目录下的bin目录。
+cd C:\web\mysql5.7\bin
+③	输入以下命令开始安装。
+mysqld.exe -install
+mysqld.exe -remove（卸载）
+
+
+【启动MySQL】
+1、初始化数据库
+mysqld.exe --initialize-insecure
+2、管理MySQL服务
+net start MySQL			# 启动“MySQL”服务
+net stop MySQL			# 停止“MySQL”服务
+net restart MySQL		# 重新启动“MySQL”服务
+
+
